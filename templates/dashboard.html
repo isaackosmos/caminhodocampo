@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel de Controle</title>
+  <link rel="stylesheet" href="../static/css/dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><i class="fa-solid fa-bars"></i><a href="#">Painel De Controle</a></li>
+          <li><i class="fa-solid fa-leaf"></i><a href="#">Produtos</a></li>
+          <li><i class="fa-solid fa-circle-user"></i><a href="#">Perfil</a></li>
+        </ul>
+      </nav>
+      <img src="../static/images/logo.svg" class="sidebar-img" />
+      <button class="btn-sair">Sair</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Painel de Controle</h1>
+        <div class="satisfaction-note-div">
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <div class="note-block">
+            <span>Nota de Satisfação</span>
+            <span><span class="note">8.0</span>/10</span>  
+          </div>
+        </div>
+      </header>
+
+      <section class="cards-row">
+        <div class="card">
+          <h3><i class="fa-solid fa-seedling card-icon"></i>Produtos Cadastrados</h3>
+          <table>
+            <thead>
+              <tr><th>Produto</th><th>Quantidade</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Soja</td><td><strong>150</strong></td></tr>
+              <tr><td>Milho</td><td><strong>254</strong></td></tr>
+              <tr><td>Feijão</td><td><strong>109</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3><i class="fa-solid fa-clock card-icon"></i>Próximas Colheitas</h3>
+          <table>
+            <thead>
+              <tr><th>Cultura</th><th>Data</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Milho</td><td>15/04</td></tr>
+              <tr><td>Feijão</td><td>31/03</td></tr>
+              <tr><td>Soja</td><td>--</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3><i class="fa-solid fa-chart-simple card-icon"></i>Área Cultivada</h3>
+          <table>
+            <thead>
+              <tr><th>Produto</th><th>Área (ha)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Feijão</td><td>45</td></tr>
+              <tr><td>Milho</td><td>60</td></tr>
+              <tr><td>Soja</td><td>82</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="charts">
+        <div class="line-chart-div">
+          <h3>Histórico de Produção</h3>
+          <img src="../static/images/periodchart.png" alt="">
+          <!--<canvas id="graficoLinha"></canvas>-->
+        </div>
+        <div class="donut-chart-div">
+          <h3>Produção por Cultura</h3>
+          <img src="../static/images/donuthcart.png" alt="">
+          <!--<canvas id="graficoPizza"></canvas>-->
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../static/js/chart.js"></script>
+</body>
+</html>
