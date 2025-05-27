@@ -1,0 +1,14 @@
+<div class="login-box">
+  <img src="logo.svg" alt="Ilustração Login" class="login-image">
+  <h2 class="h2-text">Sua jornada começa aqui</h2>
+  <p class="subtext">Um único login para todos os produtos da Caminho do Campo</p>
+
+  <form (submit)="onSubmit($event)">
+    <input type="email" placeholder="E-mail ou Usuário" required>
+    <input type="password" placeholder="Senha" required>
+    <a href="#" class="forgot">Esqueceu sua senha?</a>
+    <button id="submit-login-btn" type="submit">Entrar</button>
+  </form>
+
+  <p class="signup-text">Não possui uma conta? <a href="#">Crie Agora</a></p>
+</div>
