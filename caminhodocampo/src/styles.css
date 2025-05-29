@@ -5,7 +5,7 @@ body, html {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to bottom, #eafaea, #ffffff);
   min-height: 100vh;
-  box-sizing: border-box;
+  max-width: 100vw;
 }
 
 .app-container {
