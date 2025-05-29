@@ -4,9 +4,17 @@ body, html {
   padding: 0;
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to bottom, #eafaea, #ffffff);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  padding: 20px;
 }
